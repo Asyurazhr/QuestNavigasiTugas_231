@@ -48,4 +48,11 @@ fun DaftarPeserta(
                 colors = TopAppBarDefaults.mediumTopAppBarColors(containerColor = Color(0xFFD8B4FE))
             )
         }
-    ){
+    ){ isiRuang->
+        Column (modifier = Modifier
+            .fillMaxSize()
+            .background(color = Color(0xFFF9EDFC))
+            .padding(paddingValues = isiRuang),
+            verticalArrangement = Arrangement.Top)
+
+        {
