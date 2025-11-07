@@ -75,3 +75,30 @@ fun FormDataDiri(
                 )
             }
 
+            Spacer(modifier = Modifier.height(20.dp))
+
+            ElevatedCard(modifier = Modifier
+                .fillMaxWidth(1f)
+                .padding(all = 10.dp),
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                elevation = CardDefaults.cardElevation(defaultElevation = 50.dp)
+            ) {
+                Text(text = "NAMA LENGKAP",modifier = Modifier.padding(all = 10.dp), fontWeight = FontWeight.Bold)
+                OutlinedTextField(
+                    value = "",
+                    onValueChange = {},
+                    singleLine = true,
+                    shape = MaterialTheme.shapes.large,
+                    label = { Text(text = "Isian Nama Lengkap")},
+                    modifier = Modifier.padding(10.dp)
+                        .fillMaxWidth(1f),
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedTextColor = Color.Black,
+                        unfocusedTextColor = Color.DarkGray,
+                        focusedContainerColor = Color.White,
+                        unfocusedContainerColor = Color.White,
+                        focusedBorderColor = Color.Blue,
+                        unfocusedBorderColor = Color.Gray,
+                    )
+                )
+
