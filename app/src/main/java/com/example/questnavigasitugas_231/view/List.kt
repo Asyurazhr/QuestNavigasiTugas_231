@@ -71,3 +71,11 @@ fun DaftarPeserta(
                             fontSize = 16.sp
 
                         )
+                        Spacer(modifier = Modifier.height(6.dp))
+                        Text(text=item.second,
+                            fontSize = 22.sp,
+                            fontFamily = FontFamily.Cursive
+                        )
+                    }
+                }
+            }
