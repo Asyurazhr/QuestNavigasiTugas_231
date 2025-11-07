@@ -35,3 +35,9 @@ fun DaftarPeserta(
     onBackToBerandaClick:()-> Unit,
     OnBtnToFormulirClick:()-> Unit
 ){
+    val daftar=listOf(
+        Pair(first = stringResource(id=R.string.nama_lengkap), second = "Zura"),
+        Pair(first = stringResource(id=R.string.jenis_kelamin), second = "Perempuan"),
+        Pair(first = stringResource(id=R.string.status), second = "Lajang"),
+        Pair(first = stringResource(id=R.string.alamat), second = "Bantul"),
+    )
