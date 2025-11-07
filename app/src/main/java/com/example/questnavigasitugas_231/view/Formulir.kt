@@ -52,3 +52,26 @@ fun FormDataDiri(
     val gender: List<String> = listOf("Laki-laki", "Perempuan")
     val status1: List<String> = listOf("Janda", "Lajang", "Duda")
 
+    Box(modifier = Modifier.fillMaxSize()
+    ) {
+        Column(modifier = Modifier
+            .padding(top = 50.dp)
+            .fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ){
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(Color(0xFFB39DDB))
+                    .padding(vertical = 20.dp)
+            ){
+                Text(
+                    text = "Formulir Pendaftaran",
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 22.sp,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth()
+                )
+            }
+
