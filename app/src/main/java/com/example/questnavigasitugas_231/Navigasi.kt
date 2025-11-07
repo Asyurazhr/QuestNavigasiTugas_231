@@ -60,3 +60,16 @@ fun HomeApp(
     }
 }
 
+private fun cancelAndBackToBeranda(navController: NavController) {
+    navController.popBackStack(
+        route = Navigasi.Beranda.name,
+        inclusive = false
+    )
+}
+
+private fun cancelAndBackToList(navController: NavController) {
+    navController.popBackStack(
+        route = Navigasi.List.name,
+        inclusive = false
+    )
+}
