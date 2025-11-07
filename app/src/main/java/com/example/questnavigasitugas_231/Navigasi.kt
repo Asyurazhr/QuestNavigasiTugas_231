@@ -24,3 +24,39 @@ fun HomeApp(
     navController: NavHostController = rememberNavController(),
     modifier: Modifier = Modifier
 ) {
+    Scaffold { isiRuang ->
+        NavHost(
+            navController = navController,
+            startDestination = Navigasi.Beranda.name,
+            modifier = Modifier.padding(isiRuang)
+        ) {
+            composable(route = Navigasi.Beranda.name) {
+                HomePage(
+                    OnSubmitBtnClick = {
+                        navController.navigate(Navigasi.List.name)
+                    }
+                )
+            }
+
+            composable(route = Navigasi.List.name) {
+                DaftarPeserta(
+                    onBackToBerandaClick = {
+                        cancelAndBackToBeranda(navController)
+                    },
+                    OnBtnToFormulirClick = {
+                        navController.navigate(Navigasi.Formulir.name)
+                    }
+                )
+            }
+
+            composable(route = Navigasi.Formulir.name) {
+                FormDataDiri(
+                    onBackToBtnClick = {
+                        cancelAndBackToList(navController)
+                    }
+                )
+            }
+        }
+    }
+}
+
