@@ -41,3 +41,11 @@ fun DaftarPeserta(
         Pair(first = stringResource(id=R.string.status), second = "Lajang"),
         Pair(first = stringResource(id=R.string.alamat), second = "Bantul"),
     )
+    Scaffold (modifier = Modifier,
+        topBar = {
+            TopAppBar(
+                title = { Text(text=stringResource(id=R.string.list),color= Color.White) },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(containerColor = Color(0xFFD8B4FE))
+            )
+        }
+    ){
