@@ -56,3 +56,12 @@ fun DaftarPeserta(
             verticalArrangement = Arrangement.Top)
 
         {
+            daftar.forEach { item->
+                Card (modifier = Modifier
+                    .padding(all=12.dp)
+                    .fillMaxWidth(),
+                    elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = Color.White)
+                )
+                {
