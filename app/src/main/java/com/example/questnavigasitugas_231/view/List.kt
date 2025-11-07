@@ -79,3 +79,4 @@ fun DaftarPeserta(
                     }
                 }
             }
+            Spacer(modifier = Modifier .height(height = 30.dp))
