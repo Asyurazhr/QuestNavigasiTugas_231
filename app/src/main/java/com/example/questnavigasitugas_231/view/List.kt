@@ -65,3 +65,9 @@ fun DaftarPeserta(
                         containerColor = Color.White)
                 )
                 {
+                    Column (modifier = Modifier
+                        .padding(all=15.dp)){
+                        Text(text=item.first,
+                            fontSize = 16.sp
+
+                        )
