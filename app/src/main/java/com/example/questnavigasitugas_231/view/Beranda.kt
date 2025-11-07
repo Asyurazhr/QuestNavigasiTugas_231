@@ -34,3 +34,13 @@ import com.example.questnavigasitugas_231.R
 fun HomePage(
     OnSubmitBtnClick:()-> Unit
 ){
+    Scaffold { isiRuang->
+        val goyonjung = painterResource(R.drawable.goyonjung)
+        Column (
+            modifier = Modifier
+                .fillMaxSize()
+                .background(color = Color(0xFFF9EDFC))
+                .padding(paddingValues = isiRuang),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ){
