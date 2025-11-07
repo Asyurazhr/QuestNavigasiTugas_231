@@ -90,3 +90,20 @@ fun DaftarPeserta(
             {
                 Text(text="Beranda")
             }
+            Button(modifier = Modifier
+                .padding(10.dp)
+                .fillMaxWidth(),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = colorResource(id=R.color.purple_500 )
+                ),
+                onClick = OnBtnToFormulirClick)
+
+            {
+                Text(text = stringResource(R.string.formulir))
+            }
+
+        }
+
+    }
+
+}
