@@ -31,3 +31,7 @@ import com.example.questnavigasitugas_231.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
+fun DaftarPeserta(
+    onBackToBerandaClick:()-> Unit,
+    OnBtnToFormulirClick:()-> Unit
+){
