@@ -44,3 +44,40 @@ fun HomePage(
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ){
+            Text(text= stringResource(id = R.string.welcome), modifier = Modifier,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Serif,
+                fontSize = 40.sp,
+                color = Color(0xFFAD6FBF)
+            )
+            Spacer(modifier = Modifier.height(height = 30.dp))
+            Image(painter=goyonjung,
+                contentDescription = null,
+                contentScale = ContentScale.Fit
+            )
+            Spacer(modifier = Modifier.height(height = 30.dp))
+            Text(text = stringResource(id=R.string.Nama),
+                modifier = Modifier,
+                fontSize = 22.sp,
+                fontFamily = FontFamily.Monospace,
+                color = Color(0xFFAD6FBF)
+            )
+            Text(text=stringResource(id=R.string.NIM), modifier = Modifier,
+                fontSize = 18.sp,
+                fontFamily = FontFamily.Serif,
+                color=Color.Black
+            )
+            Spacer(modifier = Modifier.height(height = 30.dp))
+            Button(modifier= Modifier
+                .width(width = 270.dp),
+                onClick = OnSubmitBtnClick,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFFAD6FBF)
+                )
+            ){
+                Text(text = stringResource(id=R.string.submit), modifier = Modifier,
+                    color=Color.White)
+            }
+        }
+    }
+}
